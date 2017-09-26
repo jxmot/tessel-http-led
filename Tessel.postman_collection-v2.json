@@ -1,0 +1,91 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Tessel",
+		"_postman_id": "6086092a-a0d0-1939-130c-3e96b203a0e8",
+		"description": "For testing endpoints implemented on a Tessel 2.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tessel - HTTP GET",
+			"request": {
+				"url": "http://192.168.0.26:8080/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{'_id':'SENS02','t':'87.2F','h':'52%'}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Tessel - HTTP GET leds",
+			"request": {
+				"url": "http://192.168.0.26:8080/leds/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{'_id':'SENS02','t':'87.2F','h':'52%'}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Tessel - HTTP GET favicon",
+			"request": {
+				"url": "http://192.168.0.26:8080/favicon.ico",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{'_id':'SENS02','t':'87.2F','h':'52%'}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Tessel - HTTP POST LEDs",
+			"request": {
+				"url": "http://192.168.0.26:8080/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ledidx\":2}"
+				},
+				"description": "Turn LEDs ON or OFF, expect a response from server."
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,139 @@
+{
+	"id": "6086092a-a0d0-1939-130c-3e96b203a0e8",
+	"name": "Tessel",
+	"description": "For testing endpoints implemented on a Tessel 2.",
+	"order": [
+		"940c15c5-1378-d19d-18cf-7aea0553632e",
+		"fdd19e07-a5c6-98af-6e5d-0e36697a4d9b",
+		"078ab600-323f-806a-b87f-8fd66077a5d7",
+		"7e6aca5d-2c52-984f-8f71-360f0171bea0"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1501013060050,
+	"owner": "1447281",
+	"public": false,
+	"requests": [
+		{
+			"id": "078ab600-323f-806a-b87f-8fd66077a5d7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://192.168.0.26:8080/favicon.ico",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "6086092a-a0d0-1939-130c-3e96b203a0e8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Tessel - HTTP GET favicon",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1501024629698,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{'_id':'SENS02','t':'87.2F','h':'52%'}"
+		},
+		{
+			"id": "7e6aca5d-2c52-984f-8f71-360f0171bea0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://192.168.0.26:8080/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501016953409,
+			"name": "Tessel - HTTP POST LEDs",
+			"description": "Turn LEDs ON or OFF, expect a response from server.",
+			"collectionId": "6086092a-a0d0-1939-130c-3e96b203a0e8",
+			"responses": [],
+			"rawModeData": "{\"ledidx\":2}"
+		},
+		{
+			"id": "940c15c5-1378-d19d-18cf-7aea0553632e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://192.168.0.26:8080/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501013305128,
+			"name": "Tessel - HTTP GET",
+			"description": "",
+			"collectionId": "6086092a-a0d0-1939-130c-3e96b203a0e8",
+			"responses": [],
+			"rawModeData": "{'_id':'SENS02','t':'87.2F','h':'52%'}"
+		},
+		{
+			"id": "fdd19e07-a5c6-98af-6e5d-0e36697a4d9b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://192.168.0.26:8080/leds/2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501018290000,
+			"name": "Tessel - HTTP GET leds",
+			"description": "",
+			"collectionId": "6086092a-a0d0-1939-130c-3e96b203a0e8",
+			"responses": [],
+			"rawModeData": "{'_id':'SENS02','t':'87.2F','h':'52%'}"
+		}
+	]
+}
